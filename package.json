@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Access resources (e.g. exchange rates) provided by the National Bank of Romania.",
   "main": "lib/index.js",
-  "dependencies": {},
+  "dependencies": {
+    "tinyreq": "^3.1.4",
+    "xml-jsonify": "^1.0.3"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
