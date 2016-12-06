@@ -1,0 +1,39 @@
+{
+  "name": "bnr",
+  "version": "1.0.0",
+  "description": "Access resources (e.g. exchange rates) provided by the National Bank of Romania.",
+  "main": "lib/index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bloggify/node-bnr.git"
+  },
+  "keywords": [
+    "bnr",
+    "romania",
+    "bank",
+    "currency",
+    "rates"
+  ],
+  "author": "Bloggify <support@bloggify.org> (https://bloggify.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bloggify/node-bnr/issues"
+  },
+  "homepage": "https://github.com/Bloggify/node-bnr#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ]
+}
