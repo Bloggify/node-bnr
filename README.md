@@ -68,6 +68,7 @@ bnr.convert(100, "EUR", "USD", function (err, amount, output) {
 
 ## :memo: Documentation
 
+
 ### `getRates(cb)`
 Get the currency exchange rates.
 
