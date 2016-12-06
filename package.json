@@ -1,5 +1,5 @@
 {
-  "name": "bnr",
+  "name": "node-bnr",
   "version": "1.0.0",
   "description": "Access resources (e.g. exchange rates) provided by the National Bank of Romania.",
   "main": "lib/index.js",
