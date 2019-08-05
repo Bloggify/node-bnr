@@ -1,23 +1,52 @@
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # bnr
 
- [![Version](https://img.shields.io/npm/v/bnr.svg)](https://www.npmjs.com/package/bnr) [![Downloads](https://img.shields.io/npm/dt/bnr.svg)](https://www.npmjs.com/package/bnr)
+Access resources (e.g. exchange rates) provided by the National Bank of Romania.
 
-> Access resources (e.g. exchange rates) provided by the National Bank of Romania.
 
-## :cloud: Installation
+
+
+## Installation
 
 ```sh
-$ npm i --save bnr
+$ npm i bnr
 ```
 
 
-## :clipboard: Example
+
+
+
+
+
+
+
+## Example
+
+
+
 
 
 
 ```js
-const bnr = require("bnr");
+"use strict";
+
+const bnr = require("..");
 
 // Get the currency rates
 bnr.getRates((err, rates) => {
@@ -64,9 +93,18 @@ bnr.convert(100, "EUR", "USD", function (err, amount, output) {
     // Result: 107.72102819395911
     // 100 EUR is 107.72102819395911 USD
 });
+
 ```
 
-## :memo: Documentation
+
+
+
+
+
+## Documentation
+
+
+
 
 
 ### `getRates(cb)`
@@ -86,16 +124,18 @@ Convert currencies.
 
 
 
-## :yum: How to contribute
+
+
+
+## How to contribute
 Have an idea? Found a bug? See [how to contribute][contributing].
 
 
 
-## :scroll: License
+## License
+See the [LICENSE][license] file.
 
-[MIT][license] © [Bloggify][website]
 
-[license]: http://showalicense.com/?fullname=Bloggify%20%3Csupport%40bloggify.org%3E%20(https%3A%2F%2Fbloggify.org)&year=2016#license-mit
-[website]: https://bloggify.org
+[license]: /LICENSE
 [contributing]: /CONTRIBUTING.md
 [docs]: /DOCUMENTATION.md
