@@ -8,7 +8,7 @@
     "noImplicitThis": true,
     "strictNullChecks": true,
     "strictFunctionTypes": true,
-    "baseUrl": "../",
+    "baseUrl": "../lib",
     "typeRoots": [
       "./"
     ],
@@ -17,7 +17,7 @@
     "forceConsistentCasingInFileNames": true
   },
   "files": [
-    "./bnr.d.ts",
+    "./index.d.ts",
     "./bnr-tests.ts"
   ]
 }
