@@ -38,6 +38,7 @@
     "lib/",
     "dist/",
     "src/",
+    "types/",
     "resources/",
     "menu/",
     "cli.js",
