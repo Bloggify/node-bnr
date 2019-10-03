@@ -7,7 +7,7 @@ declare namespace BNR {
     /**
      * Currency code string.
      */
-    type CurrencyCode = string;
+    type CurrencyCode = 'RON' | 'AED' | 'AUD' | 'BGN' | 'BRL' | 'CAD' | 'CHF' | 'CNY' | 'CZK' | 'DKK' | 'EGP' | 'EUR' | 'GBP' | 'HRK' | 'HUF' | 'INR' | 'JPY' | 'KRW' | 'MDL' | 'MXN' | 'NOK' | 'NZD' | 'PLN' | 'RSD' | 'RUB' | 'SEK' | 'THB' | 'TRY' | 'UAH' | 'USD' | 'XAU' | 'XDR' | 'ZAR';
 
     /**
      * Exchange rate object.
