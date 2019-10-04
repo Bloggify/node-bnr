@@ -1,3 +1,5 @@
+import { ConvertedOutput, CurrencyCode } from './index';
+
 declare namespace BNR {
     /**
      * Callback error.
@@ -37,6 +39,15 @@ declare namespace BNR {
     type Rates = {
         [Key in CurrencyCode]: ExchangeRate<Key>;
     }
+
+    /**
+     * Output object for converted currencies.
+     */
+    interface ConvertedOutput<Currency = CurrencyCode> {
+        currency: Currency;
+        currency_obj: ExchangeRate<Currency>
+        amount: number;
+    }
 }
 
 declare class BNR {
@@ -44,6 +55,16 @@ declare class BNR {
      * Fetch currency exchange rates.
      */
     static getRates(callback: (err: BNR.CallbackError, rates: BNR.Rates) => any): void;
+
+    /**
+     * Convert currencies.
+     */
+    static convert<Input extends CurrencyCode, Output extends CurrencyCode>(
+        amount: number,
+        inputCurrency: Input,
+        outputCurrency: Output,
+        callback: (err: BNR.CallbackError, result: number, summary: { input: ConvertedOutput<Input>, output: ConvertedOutput<Output> }) => any
+    ): void;
 }
 
 /**
