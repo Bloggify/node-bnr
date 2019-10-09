@@ -94,6 +94,15 @@ bnr.convert(100, "EUR", "USD", function (err, amount, output) {
     // 100 EUR is 107.72102819395911 USD
 });
 
+// Using promises
+bnr.getRates().then((rates) => {
+    console.log(rates);
+    // { RON: { multiplier: 1, amount: 1, name: 'RON' },
+    //   AED: { amount: 1.1375, name: 'AED', multiplier: 1 },
+    //   ...
+    //   ZAR: { amount: 0.3065, name: 'ZAR', multiplier: 1 }
+    // }
+})
 ```
 
 
