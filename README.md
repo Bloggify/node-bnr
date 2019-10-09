@@ -102,7 +102,13 @@ bnr.getRates().then((rates) => {
     //   ...
     //   ZAR: { amount: 0.3065, name: 'ZAR', multiplier: 1 }
     // }
-})
+});
+
+// Convert 100 EUR into USD - using promises
+bnr.convert(100, 'EUR', 'USD').then((amount) => {
+    console.log(`Result: ${amount}`);
+     // Result: 107.72102819395911
+});
 ```
 
 
