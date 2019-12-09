@@ -46,7 +46,7 @@ $ npm i bnr
 ```js
 "use strict";
 
-const bnr = require("..");
+const bnr = require("bnr");
 
 // Get the currency rates
 bnr.getRates((err, rates) => {
