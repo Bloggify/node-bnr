@@ -54,7 +54,7 @@ declare class BNR {
     /**
      * Fetch currency exchange rates.
      */
-    static getRates(callback: (err: BNR.CallbackError, rates: BNR.Rates) => any): void;
+    static getRates(callback?: (err: BNR.CallbackError, rates: BNR.Rates) => any): Promise<BNR.Rates>;
 
     /**
      * Convert currencies.
@@ -63,8 +63,8 @@ declare class BNR {
         amount: number,
         inputCurrency: Input,
         outputCurrency: Output,
-        callback: (err: BNR.CallbackError, result: number, summary: { input: ConvertedOutput<Input>, output: ConvertedOutput<Output> }) => any
-    ): void;
+        callback?: (err: BNR.CallbackError, result: number, summary: { input: ConvertedOutput<Input>, output: ConvertedOutput<Output> }) => any
+    ): Promise<number>;
 }
 
 /**
