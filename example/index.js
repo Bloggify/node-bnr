@@ -47,3 +47,6 @@ bnr.convert(100, "EUR", "USD", function (err, amount, output) {
     // Result: 107.72102819395911
     // 100 EUR is 107.72102819395911 USD
 });
+
+// The promise way
+bnr.getRates().then(console.log)
